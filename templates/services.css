@@ -1,0 +1,46 @@
+header { 
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  li {
+    display:inline;      
+    background-color: #333;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+  }
+  
+  li:hover {
+    background-color: #bbd0ff;
+    color: white;
+  }
+  a:link {
+    color: white; 
+  }
+  a:visited {
+    color: white;
+  }
+  button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+.ch{
+    color: #333;
+}

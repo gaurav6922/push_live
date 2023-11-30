@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Python Program</title>
+</head>
+
+<body>
+    <h1>Run Python Program</h1>
+
+    <!-- Button to trigger the Python program -->
+    <button id="runPythonProgramButton">Run Python Program</button>
+
+    <div id="output"></div>
+
+    <script>
+        // Function to handle button click
+        function runPythonProgram() {
+            // Make an AJAX request to the Flask endpoint
+            fetch('/run_python_program')
+            .then(response => response.text())
+            .then(output => {
+                document.getElementById('output').innerText = output;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        // Attach the function to the button click event
+        document.getElementById('runPythonProgramButton').addEventListener('click', runPythonProgram);
+    </script>
+</body>
+</html>
